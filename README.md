@@ -1,4 +1,4 @@
-# 🌐 Super Team — Landing Page
+# 🌐 Team Delta — Landing Page Project
 
 > *Haciendo de la internet un espacio más bonito y estético, desde que Tim Berners Lee creó el HTML.*
 
