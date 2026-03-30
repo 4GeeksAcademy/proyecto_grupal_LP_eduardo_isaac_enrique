@@ -1,1 +1,1 @@
-# proyecto_grupal_LP_eduardo_isaac_enrique
+# proyecto grupal LP Eduardo, Isaac y Enrique
