@@ -23,9 +23,11 @@
     }
 
     .site-nav .container{
-        height: 64px;
+        min-height: 64px;
+        height: auto;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .nav-logo{
@@ -68,4 +70,163 @@
     .navbar-nav .nav-link.active{
         color: var(--ink) !important;
         background:  #f4f5f9;
+    }
+
+    .navbar-nav .dropdown-menu{
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.4rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .07);
+        min-width: 180px;
+        margin-top: 0.4rem;
+    }
+
+    .navbar-nav .dropdown-item{
+        font-size: .82rem;
+        font-weight: 500;
+        color: var(--muted);
+        border-radius: 6px;
+        padding: 0.5rem 0.85rem;
+        transition: background .15s, color .15;
+    }
+
+    .navbar-nav .dropdown-item:hover{
+        background: #f4f5f9;
+        color: var(--ink);
+    }
+
+    .btn-nav-cta{
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .01em;
+        background: var(--ink);
+        color: #fff !important;
+        border: none;
+        border-radius: 8px;
+        padding: 0.48rem 1.15rem !important;
+        transition: background .18s, transform .15s;
+    }
+
+    .btn-nav-cta:hover{
+        background: var(--accent) !important;
+        color: #fff !important;
+        transform: translateY(-1px);
+    }
+
+    .navbar-toggler{
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.3rem 0.55rem;
+    }
+
+    .navbar-toggler:focus{ box-shadow: none;}
+
+    .site-hero {
+        background: var(--bg);
+        padding: 5rem 0 4.5rem;
+        text-align: center;
+    }
+
+    .hero-barge{
+        display: inline-flex;
+        align-items: center;
+        gap: .4rem;
+        background: #eef1ff;
+        color: var(--accent);
+        font-size: .72rem;
+        font-weight: 600;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        padding: 0.3rem 0.85rem;
+        border-radius: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-badge i{
+        font-size: .75rem;
+    }
+
+    .hero-title{
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 600;
+        color: var(--ink);
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+    }
+
+    .hero-title span{
+        color: var(--accent);
+    }
+
+    .hero-sub{
+        font-size: .95rem;
+        color: var(--muted);
+        font-weight: 400;
+        max-width: 420px;
+        margin: 0 auto 2.2rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions{
+        display: flex;
+        gap: .75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-primary-hero {
+      background: var(--ink);
+      color: #fff;
+      font-size: .83rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 9px;
+      padding: .72rem 1.6rem;
+      text-decoration: none;
+      transition: background .18s, transform .15s;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .btn-primary-hero:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+ 
+    .btn-ghost-hero {
+      background: transparent;
+      color: var(--muted);
+      font-size: .83rem;
+      font-weight: 500;
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      padding: .72rem 1.6rem;
+      text-decoration: none;
+      transition: border-color .18s, color .18s;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .btn-ghost-hero:hover {
+      border-color: #c8ccda;
+      color: var(--ink);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .a1 { animation: fadeUp .5s ease both; }
+    .a2 { animation: fadeUp .5s .1s ease both; }
+    .a3 { animation: fadeUp .5s .2s ease both; }
+    .a4 { animation: fadeUp .5s .3s ease both; }
+
+    @media(max-width: 991px) {
+        .btn-nav-cta{
+            display: inline-block !important;
+            width: auto !important;
+            margin-top: .5rem;
+        }
     }
