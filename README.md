@@ -1,1 +1,1 @@
-# proyecto grupal LP Eduardo, Isaac y Enrique
+# Proyecto Grupal LP increiblemente aesthetic. Hecha por Eduardo, Isaac y Enrique
