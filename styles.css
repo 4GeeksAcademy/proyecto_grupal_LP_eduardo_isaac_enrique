@@ -214,6 +214,99 @@
       color: var(--ink);
     }
 
+    .site-footer{
+        background-color: var(--bg);
+        border-top: 1px solid var(--border);
+        padding: 3.5rem 0 0;
+        margin-top: 4rem;
+    }
+
+    .footer-top{
+        padding-bottom: 3rem;
+    }
+
+    .footer-desc{
+        font-size: .82rem;
+        color: var(--muted);
+        line-height: 1.7;
+        margin-top: .1rem;
+        max-width: 260px ;
+    }
+
+    .footer-socials{
+        display: flex;
+        gap: .5rem;
+        margin-top: 1.25rem;
+    }
+
+    .footer-socials a{
+        width: 34px;
+        height: 34px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        font-size: .95rem;
+        text-decoration: none;
+        transition: border-color .18s, color .18s, background .18s;
+    }
+
+    .footer-socials a:hover{
+        border-color: var(--ink);
+        color: var(--ink);
+        background: #f4f5f9;
+    }
+
+    .footer-heading{
+        font-size: .7rem;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--ink);
+        margin-bottom: 1rem;
+    }
+
+    .footer-link{
+        link-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+    .footer-link a{
+        font-size: .82rem;
+        color: var(--muted);
+        text-decoration: none;
+        transition: color .18;
+    }
+
+    .footer-link a:hover{
+        color: var(--ink);
+    }
+
+    .footer-bottom{
+        padding: 1.25rem 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+        font-size: .75rem;
+        color: var(--muted);
+    }
+
+    .footer-heart{
+        color: var(--accent);
+        font-size: .65rem;
+        vertical-align: middle;
+    }
+    
+
+
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
